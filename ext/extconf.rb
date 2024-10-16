@@ -89,4 +89,7 @@ if RUBY_ENGINE == 'jruby' &&
   $CXXFLAGS << ' -fPIC'
 end
 
+CONFIG['CC'] = "gcc"
+CONFIG['CXX'] = "g++"
+
 create_makefile 'sassc/libsass'
